@@ -23,6 +23,10 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
         
+      # Install project
+      - name: Build project
+        run: npm install
+
       # Build project
       - name: Build project
         run: npm run-script build
